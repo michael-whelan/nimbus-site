@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Privacy Policy — Nimbus</title>
+    <meta
+      name="description"
+      content="How the Nimbus weather app handles your location and diagnostic data. No adverts, no analytics, no tracking."
+    />
+    <link rel="canonical" href="https://nimbus.michaelwhelan.dev/policies/privacy/" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="theme-color" content="#0a1937" />
+    <link rel="icon" href="/img/nimbus-icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          var dark = saved
+            ? saved === "dark"
+            : matchMedia("(prefers-color-scheme: dark)").matches;
+          document.documentElement.classList.toggle("dark", dark);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <div class="page">
+      <div class="toolbar">
+        <a class="brand" href="/">
+          <img src="/img/nimbus-icon.svg" alt="" />
+          Nimbus
+        </a>
+        <button id="theme-toggle" type="button" aria-label="Switch theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+            />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+      </div>
+
+      <main id="main" class="policy">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated 8 October 2026</p>
+
+        <h2>The short version</h2>
+        <p>
+          Nimbus has no accounts, no adverts, no analytics and no tracking. Your location
+          is used to fetch a forecast and is not stored anywhere but your own phone. The
+          only information sent off your device is what is needed to return weather for a
+          place, plus anonymous crash reports that help fix bugs.
+        </p>
+
+        <h2>Who is responsible</h2>
+        <p>
+          Nimbus is an independent app built and maintained by Michael Whelan, who is the
+          data controller for the purposes of the UK GDPR and EU GDPR. You can reach me at
+          <a href="mailto:nimbus@michaelwhelan.dev">nimbus@michaelwhelan.dev</a>.
+        </p>
+
+        <h2>Location</h2>
+        <p>
+          If you grant the location permission, Nimbus reads your device's coordinates and
+          sends them to Open-Meteo to retrieve the forecast for that point. The permission
+          is optional: you can decline it and search for places by name instead, and you
+          can revoke it at any time in your device settings.
+        </p>
+        <p>
+          To turn coordinates into a place name, Nimbus asks your device's own geocoder,
+          which on Android is provided by Google Play Services. That lookup happens
+          through the operating system rather than through me.
+        </p>
+        <p>
+          Your coordinates are never attached to crash reports, never written to any
+          server I control, and never used to build a profile of you.
+        </p>
+
+        <h2>Location search</h2>
+        <p>
+          When you search for a place, the text you type is sent to Open-Meteo's geocoding
+          service to return matching places. Your recent searches are kept on your device
+          only.
+        </p>
+
+        <h2>What stays on your device</h2>
+        <p>
+          The following is stored locally on your phone, is not transmitted anywhere, and
+          is deleted when you uninstall the app:
+        </p>
+        <ul>
+          <li>Your saved and recently searched locations</li>
+          <li>The currently selected location and your last known position</li>
+          <li>Cached forecasts and sunrise/sunset times, so the app works offline</li>
+          <li>Your preferences, such as units and theme</li>
+          <li>The location your home screen widget displays</li>
+        </ul>
+
+        <h2>Crash and error reports</h2>
+        <p>
+          Nimbus uses Sentry to report crashes and errors so they can be fixed. A report
+          contains the error and its stack trace, which part of the app it came from, the
+          app version, the operating system version and the device model. Reports are sent
+          to Sentry's European infrastructure.
+        </p>
+        <p>
+          Reports deliberately exclude your IP address, your device name, your coordinates
+          and your saved places. They are not linked to an identity, and there is no way
+          for me to connect a crash report back to a particular person.
+        </p>
+
+        <h2>What Nimbus does not do</h2>
+        <ul>
+          <li>No advertising, and no advertising identifiers</li>
+          <li>No analytics, usage tracking or behavioural profiling</li>
+          <li>No tracking across other apps or websites</li>
+          <li>No accounts, sign-up or email collection</li>
+          <li>No selling or sharing of personal data with anyone</li>
+        </ul>
+
+        <h2>Other services</h2>
+        <p>
+          Weather and geocoding come from
+          <a href="https://open-meteo.com/en/terms">Open-Meteo</a>. Crash reporting is
+          handled by <a href="https://sentry.io/privacy/">Sentry</a>. The app is
+          distributed through Google Play, which collects its own installation and crash
+          data under
+          <a href="https://policies.google.com/privacy">Google's privacy policy</a>.
+          Opening a link from inside the app — the coffee page, for example — hands you to
+          that site, which will see a normal web request from your browser.
+        </p>
+
+        <h2>Legal basis and retention</h2>
+        <p>
+          Location is processed on the basis of your consent, given through the Android
+          permission prompt and withdrawable at any time. Crash diagnostics are processed
+          on the basis of legitimate interest in keeping the app working. Crash reports
+          are retained by Sentry for 90 days and then deleted. Everything else lives on
+          your device for as long as you keep the app installed.
+        </p>
+
+        <h2>Your rights</h2>
+        <p>
+          Under the GDPR you have rights of access, rectification, erasure, restriction,
+          portability and objection. Because Nimbus holds no account and stores your data
+          on your own device, the fastest way to erase everything is to clear the app's
+          storage or uninstall it. For anything else, or to complain, write to
+          <a href="mailto:nimbus@michaelwhelan.dev">nimbus@michaelwhelan.dev</a>. You also
+          have the right to lodge a complaint with your local data protection authority.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          Nimbus is not directed at children and does not knowingly collect any
+          information from them.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          If this policy changes, the updated version will be posted here with a new date
+          at the top, and material changes will be noted in the app's release notes.
+        </p>
+      </main>
+
+      <footer>
+        <p class="footer-note">Nimbus is built and maintained by Michael</p>
+        <nav class="links" aria-label="Footer">
+          <a href="/policies/privacy/">Privacy Policy</a>
+          <a href="/policies/terms/">Terms of Service</a>
+          <a href="https://github.com/michael-whelan">GitHub</a>
+          <a href="mailto:nimbus@michaelwhelan.dev">Contact</a>
+          <a href="https://buymeacoffee.com/michaelhw">Buy me a coffee</a>
+        </nav>
+        <p class="copyright">© <span id="year">2026</span> Michael Whelan</p>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      document.getElementById("theme-toggle").addEventListener("click", function () {
+        var dark = document.documentElement.classList.toggle("dark");
+        try {
+          localStorage.setItem("theme", dark ? "dark" : "light");
+        } catch (e) {}
+      });
+    </script>
+  </body>
+</html>

@@ -15,6 +15,7 @@ There is no build step, no dependencies and no framework — edit the files and 
 index.html                    landing page
 policies/privacy/index.html   privacy policy (required by Google Play)
 policies/terms/index.html     terms of service
+releases/index.html           release notes (en-GB text from store/release-notes-*.md in the app repo)
 styles.css                    shared styles, light and dark
 img/                          brand assets, generated in the nimbus repo
 CNAME                         custom domain for GitHub Pages

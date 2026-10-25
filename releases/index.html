@@ -55,6 +55,21 @@
         <h1>Release Notes</h1>
         <p class="updated">What changed in each version of Nimbus, newest first.</p>
 
+        <h2 id="v1.0.11">1.0.11</h2>
+        <p>
+          The forecast now runs 10 days instead of 7. Each day shows its date as well as its
+          weekday, since past a week the weekday alone repeats.
+        </p>
+        <p>
+          Fixed: around a clock change, like the end of summer time, the forecast showed one
+          day twice. Each day is now placed at midday, which a one-hour shift can't push into
+          the day before.
+        </p>
+        <p>
+          The Android back button now closes search, steps back through the menu pages and
+          then closes the menu. Before, it left Nimbus.
+        </p>
+
         <h2 id="v1.0.10">1.0.10</h2>
         <p>
           The home screen widget updates again while Nimbus is closed. Since 1.0.5 it only
